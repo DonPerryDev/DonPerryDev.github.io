@@ -1,0 +1,144 @@
+/* ----------------------------------------------------------------------------- */
+/* Imports */
+/* ----------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0");
+
+.body {
+  height: 100%;
+  background-color: rgba(135, 66, 54, 0.364);
+  display: grid;
+  grid-template-rows: 100px 8fr 1fr;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+}
+/* ----------------------------------------------------------------------------- */
+/* Header */
+/* ----------------------------------------------------------------------------- */
+header {
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 100px 2fr 0.3fr;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+  max-width: 200px;
+  max-height: 35px;
+  margin-left: 5px;
+}
+
+#foto_perfil {
+  height: 75px;
+}
+
+.login {
+  justify-content: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Tarjeta */
+/* ----------------------------------------------------------------------------- */
+.fichas {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tarjeta {
+  padding: 7px;
+  border-radius: 50px;
+  background-color: rgba(136, 252, 242, 0.284);
+  margin: 15px;
+  align-items: center;
+  height: auto;
+}
+.tarjeta:hover {
+  border: 3px solid rgba(136, 252, 242, 0.584);
+  animation: agrandar 1s 0s forwards;
+}
+
+.titulo_tarjeta {
+  text-align: center;
+}
+.img_tarjeta > img {
+  display: block;
+  margin: auto;
+  width: 255px;
+}
+
+.acciones > button {
+  font-size: large;
+  background-color: rgba(14, 104, 230, 0.401);
+}
+.acciones > button:hover {
+  background-color: rgba(14, 104, 230, 0.801);
+  cursor: pointer;
+}
+/* ----------------------------------------------------------------------------- */
+/* Tarjeta footer */
+/* ----------------------------------------------------------------------------- */
+.footer_tarjeta {
+  text-align: center;
+}
+/* ----------------------------------------------------------------------------- */
+/* Sidebar */
+/* ----------------------------------------------------------------------------- */
+.sidebar {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  background-color: aliceblue;
+}
+
+.lista {
+  font-size: 25px;
+  font-family: "Silkscreen", cursive;
+}
+/* ----------------------------------------------------------------------------- */
+/* Footer */
+/* ----------------------------------------------------------------------------- */
+footer {
+  display: flex;
+  padding-top: 15px;
+  margin-top: 5px;
+  height: 55px;
+  background-color: rgba(136, 252, 242, 0.184);
+  justify-content: center;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.correo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: medium;
+}
+.correo > a{
+  margin-left: 5px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Animaciones */
+/* ----------------------------------------------------------------------------- */
+
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

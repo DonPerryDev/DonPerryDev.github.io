@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  /* Numero y tamaño columbas grilla */
+  /* grid-template-columns:33% 33% 33%; */
+
+  /* Repetir el valor deseado */
+  grid-template-columns: repeat(4, 1fr);
+  /* Tamaño filas */
+  grid-template-rows: auto;
+  /* Espaciado entre filas y columnas 
+    puede usarse solo para filas o columnas con
+    column-gap: ;
+    row-gap: ;
+    */
+  gap: 1em;
+  /* Definir el minimo y maximo tamaño de las filas */
+  grid-auto-rows: minmax(20px, auto);
+}
+
+.container div {
+  background-color: rgba(120, 80, 200, 0.2);
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+}
+
+.container div:hover {
+  animation: agrandar forwards 1s;
+  background-color: rgba(120, 80, 200, 0.5);
+}
+
+button {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+/* Animaciones */
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
