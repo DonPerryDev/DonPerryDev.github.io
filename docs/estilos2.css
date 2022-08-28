@@ -1,0 +1,181 @@
+/* ----------------------------------------------------------------------------- */
+/* Imports */
+/* ----------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0");
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+.body {
+  color: white;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100px 8fr 1fr;
+  background-color: rgba(1, 0, 0, 0.892);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+}
+/* ----------------------------------------------------------------------------- */
+/* Header */
+/* ----------------------------------------------------------------------------- */
+header {
+  background-color: rgba(192, 0, 251, 0.02);
+  border: 3px rgba(0, 0, 0, 0.584);
+  border-style: dashed double none;
+  box-sizing: border-box;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+header:hover {
+  background-color: rgba(192, 0, 251, 0.08);
+  border-style: dashed solid;
+}
+
+header > form > input {
+  padding: 5px;
+  max-width: 200px;
+  max-height: 35px;
+  margin-left: 5px;
+}
+
+header > form > button {
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(14, 104, 230, 0.501);
+  border-style: inset;
+  border-color: rgba(255, 255, 255, 0.476);
+  border-radius: 20%;
+  margin-left: 15px;
+}
+header > form > button:hover {
+  background-color: rgba(14, 104, 230, 0.801);
+}
+
+#foto_perfil {
+  padding-left: 15px;
+  height: 75px;
+}
+
+#nombre_sitio{
+  user-select: none;
+  font-family: 'Aboreto', cursive;
+}
+
+.login {
+  justify-content: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Tarjeta */
+/* ----------------------------------------------------------------------------- */
+.fichas {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tarjeta {
+  padding: 7px;
+  border-radius: 50px;
+  margin: 15px;
+  align-items: center;
+  height: auto;
+}
+.tarjeta:hover {
+  border-radius: 15%;
+  border-style: hidden outset outset hidden; 
+  /* border: 3px solid rgba(136, 252, 242, 0.584); */
+  animation: agrandar 1s 0s forwards;
+}
+
+.titulo_tarjeta {
+  text-align: center;
+}
+.img_tarjeta > img {
+  display: block;
+  margin: auto;
+  width: 255px;
+}
+
+.acciones > button {
+  font-size: large;
+  background-color: rgba(14, 104, 230, 0.401);
+}
+.acciones > button:hover {
+  background-color: rgba(14, 104, 230, 0.801);
+  cursor: pointer;
+}
+/* ----------------------------------------------------------------------------- */
+/* Tarjeta footer */
+/* ----------------------------------------------------------------------------- */
+.footer_tarjeta {
+  text-align: center;
+}
+/* ----------------------------------------------------------------------------- */
+/* Sidebar */
+/* ----------------------------------------------------------------------------- */
+.sidebar {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.lista {
+  font-size: 25px;
+  font-family: "Silkscreen", cursive;
+}
+/* ----------------------------------------------------------------------------- */
+/* Footer */
+/* ----------------------------------------------------------------------------- */
+footer {
+  display: flex;
+  padding-top: 15px;
+  margin-top: 5px;
+  height: 55px;
+  justify-content: center;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.correo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: medium;
+}
+.correo > a {
+  margin-left: 5px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ! ANIMACIONES */
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------- */
+/* ? Tarjetas */
+/* ----------------------------------------------------------------------------- */
+
+@keyframes agrandar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ? Header */
+/* ----------------------------------------------------------------------------- */

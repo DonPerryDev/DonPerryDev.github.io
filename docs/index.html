@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="head">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./hojaVida.css" />
+    <link rel="stylesheet" href="./estilos2.css" class="estilos"/>
     <script src="./modulo/main.js" type="module"></script>
 
     <title>Document</title>
@@ -14,51 +14,24 @@
       <header id="header">
         <img id="foto_perfil" src="./assets/Morty_Smith_AS.png" alt="" />
 
-        <h2>Morty Morales de Colombia</h2>
-        <!-- <div class="login" id="conten_login"> -->
-          <!-- <h2>Hola usuario logeado</h2> -->
-          <form id="conten_login">
-            <input type="text" name="login" id="login" name="nombre_usario" />
-            <button type="submit">Iniciar sesion</button>
-          </form>
-        <!-- </div> -->
+        <h2 id="nombre_sitio">Morty Morales de Colombia</h2>
+        <form id="conten_login">
+          <input type="text" name="login" id="login" name="nombre_usario" />
+          <button type="submit">Iniciar sesion</button>
+        </form>
       </header>
 
       <div class="container">
         <div class="sidebar">
           <div class="lista">
             <ul>
-              <li><a href="#">Contenido 1</a></li>
-              <li><a href="#">Contenido 2</a></li>
-              <li><a href="#">Contenido 3</a></li>
+              <li><a href="#" id="estilo1">Contenido 1</a></li>
+              <li><a href="#" id="estilo2">Contenido 2</a></li>
+              <li><a href="#" id="estilo3">Contenido 3</a></li>
             </ul>
           </div>
         </div>
-        <div class="fichas">
-          <div class="tarjeta">
-            <div class="titulo_tarjeta">
-              <h2>Titulo</h2>
-            </div>
-            <div class="img_tarjeta">
-              <img
-                src="https://w7.pngwing.com/pngs/201/884/png-transparent-art-planets-drawing-design-sdadasd-sdwqeqweq-thumbnail.png"
-                alt=""
-              />
-            </div>
-            <div class="footer_tarjeta">
-              <div class="descripcion">
-                <p class="descripcion_tarjeta">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Alias, eum. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Alias, eum.
-                </p>
-              </div>
-              <div class="acciones">
-                <button disabled="disabled">Borrar</button>
-                <button type="submit">Ver detalles</button>
-              </div>
-            </div>
-          </div>
+        <div class="fichas" id="tarjetas">
         </div>
       </div>
       <footer>
