@@ -11,6 +11,27 @@ const TARJETAS_MOCK = [
     descripcion:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum.",
   },
+  ,
+  {
+    titulo: "titulo 3",
+    img: "https://w7.pngwing.com/pngs/201/884/png-transparent-art-planets-drawing-design-sdadasd-sdwqeqweq-thumbnail.png",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum.",
+  },
+    ,
+  {
+    titulo: "titulo 4",
+    img: "https://w7.pngwing.com/pngs/201/884/png-transparent-art-planets-drawing-design-sdadasd-sdwqeqweq-thumbnail.png",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum.",
+  },
+    ,
+  {
+    titulo: "titulo 5",
+    img: "https://w7.pngwing.com/pngs/201/884/png-transparent-art-planets-drawing-design-sdadasd-sdwqeqweq-thumbnail.png",
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, eum.",
+  },
 ];
 
 export{TARJETAS_MOCK}
